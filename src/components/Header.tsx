@@ -51,29 +51,12 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="flex justify-between items-center h-16">
           {/* Enhanced Logo */}
-          <Link to="/" className="flex items-center space-x-3 group relative">
-            <div className="relative">
-              {/* Main Logo */}
-              <div className="w-12 h-12 bg-gradient-to-br from-blue-600 via-purple-600 to-teal-500 rounded-2xl flex items-center justify-center transform group-hover:rotate-12 group-hover:scale-110 transition-all duration-700 shadow-2xl group-hover:shadow-blue-500/25">
-                <div className="relative">
-                  <span className="text-white font-bold text-lg">DV</span>
-                  {/* Data visualization effect */}
-                  <div className="absolute -top-1 -right-1 w-2 h-2 bg-yellow-400 rounded-full animate-ping"></div>
-                </div>
-              </div>
-              {/* Glow Effect */}
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-600 via-purple-600 to-teal-500 rounded-2xl blur-lg opacity-0 group-hover:opacity-40 transition-all duration-700 -z-10"></div>
-              {/* Orbiting Elements */}
-              <div className="absolute -top-2 -right-2 w-4 h-4 bg-gradient-to-r from-pink-400 to-purple-400 rounded-full opacity-0 group-hover:opacity-100 group-hover:animate-spin transition-all duration-500"></div>
-            </div>
-            <div className="flex flex-col">
-              <span className="text-2xl font-bold text-gray-900 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-blue-600 group-hover:to-teal-500 transition-all duration-500">
-                DataVision
-              </span>
-              <span className="text-xs text-gray-500 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
-                Visualize • Analyze • Transform
-              </span>
-            </div>
+          <Link to="/" className="flex flex-col items-center group">
+            <img
+              src="/logo2.png"
+              alt="Logo"
+              className="w-40 h-32 block p-0 m-0"
+            />
           </Link>
 
           {/* Enhanced Desktop Navigation */}

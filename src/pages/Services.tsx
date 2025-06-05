@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -192,8 +191,8 @@ const Services = () => {
             <Button asChild className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-3 rounded-lg text-lg font-medium transform hover:scale-105 transition-all duration-300">
               <Link to="/contact">Get Free Consultation</Link>
             </Button>
-            <Button asChild variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-blue-600 px-8 py-3 rounded-lg text-lg font-medium transform hover:scale-105 transition-all duration-300">
-              <Link to="/portfolio">View Our Work</Link>
+            <Button asChild className="bg-gradient-to-r from-white to-gray-100 text-blue-600 hover:from-gray-100 hover:to-white px-8 py-3 rounded-lg text-lg font-bold transform hover:scale-105 transition-all duration-300 shadow-2xl">
+              <Link to="/portfolio" className="text-blue-600 hover:text-blue-600">View Our Work</Link>
             </Button>
           </div>
         </div>

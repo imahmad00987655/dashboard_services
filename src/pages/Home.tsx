@@ -8,7 +8,6 @@ import FeatureCard from '@/components/FeatureCard';
 import AnimatedBackground from '@/components/AnimatedBackground';
 import FloatingElements from '@/components/FloatingElements';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
-import ConsultationForm from '@/components/ConsultationForm';
 
 const Home = () => {
   const navigate = useNavigate();
@@ -201,7 +200,7 @@ const Home = () => {
             
             <div className="flex flex-col sm:flex-row gap-6 justify-center animate-fade-in" style={{animationDelay: '400ms'}}>
               <Button asChild className="bg-gradient-to-r from-blue-600 via-purple-600 to-teal-500 hover:from-blue-700 hover:via-purple-700 hover:to-teal-600 text-white px-10 py-4 rounded-xl text-lg font-medium transform hover:scale-110 transition-all duration-500 shadow-2xl hover:shadow-blue-500/25 animate-pulse">
-                <Link to="/services">🚀 Explore Our Services</Link>
+                <Link to="/services" className="text-white hover:text-white">🚀 Explore Our Services</Link>
               </Button>
               <Button asChild variant="outline" className="border-3 border-blue-600 text-blue-600 hover:bg-gradient-to-r hover:from-blue-600 hover:to-teal-500 hover:text-white px-10 py-4 rounded-xl text-lg font-medium transform hover:scale-110 transition-all duration-500 shadow-xl hover:shadow-teal-500/25 bg-white/80 backdrop-blur-sm">
                 <Link to="/portfolio">✨ See Our Portfolio</Link>
@@ -492,24 +491,18 @@ const Home = () => {
             Ready to Transform Your Data?
           </h2>
           <p className="text-xl text-blue-100 mb-12 max-w-3xl mx-auto leading-relaxed">
-            Get a free consultation and discover how our custom dashboards can drive your business forward with real-time insights
+            Get started with our custom dashboards and drive your business forward with real-time insights
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <Button 
-              onClick={handleConsultationClick}
-              className="bg-gradient-to-r from-white to-gray-100 text-blue-600 hover:from-gray-100 hover:to-white px-10 py-4 rounded-xl text-lg font-bold transform hover:scale-110 transition-all duration-500 shadow-2xl"
-            >
-              🎯 Get Free Consultation
+            <Button asChild className="bg-gradient-to-r from-white to-gray-100 text-blue-600 hover:from-gray-100 hover:to-white px-10 py-4 rounded-xl text-lg font-bold transform hover:scale-110 transition-all duration-500 shadow-2xl">
+              <Link to="/contact">Contact Us <ChevronRight className="ml-2 h-5 w-5" /></Link>
             </Button>
-            <Button asChild variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-blue-600 px-10 py-4 rounded-xl text-lg font-medium transform hover:scale-110 transition-all duration-500">
-              <Link to="/services">📊 View All Services</Link>
+            <Button asChild className="bg-gradient-to-r from-white to-gray-100 text-blue-600 hover:from-gray-100 hover:to-white px-10 py-4 rounded-xl text-lg font-bold transform hover:scale-110 transition-all duration-500 shadow-2xl">
+              <Link to="/services" className="text-blue-600 hover:text-blue-600">View All Services</Link>
             </Button>
           </div>
         </div>
       </section>
-
-      {/* Consultation Form Section */}
-      <ConsultationForm />
 
       <Footer />
     </div>
